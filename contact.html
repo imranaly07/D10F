@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Donation10Foundation</title>
+        <title>Donation10Foundation || Online Donation</title>
         <!-- favIcon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favIcon.png">  
@@ -127,25 +127,28 @@
 
 
                             </a></p>
-                            <form>
+                            <form  action="https://api.web3forms.com/submit" method="POST">
+
                                 <div class="row gx-4 gy-3">
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your First Name">
+                                        <input type="hidden" name="access_key" value="cfc8e3de-122d-4a90-9ec5-e228a2bc526e">
+
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your First Name" name="Username">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Email">
+                                        <input type="email" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Email" name="Email">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Phone">
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Phone" name="Phone">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Subject">
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Subject" name="Subject">
                                     </div>
                                     <div class="col-12">
                                         <textarea class="form-control bg-white border-0 py-3 px-4" rows="7" cols="10" placeholder="Your Message"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn-hover-bg btn btn-primary w-100 py-3 px-5" type="submit">Submit</button>
+                                        <button class="btn-hover-bg btn btn-primary w-100 py-3 px-5" type="submit" name="Message">Submit</button>
                                     </div>
                                 </div>
                             </form>
